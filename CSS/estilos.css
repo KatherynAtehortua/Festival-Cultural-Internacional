@@ -1,14 +1,16 @@
 body{
-    margin: 0;
+    margin: 30px;
     background-color: #ffffff;
     font-family: arial, sans-serif;
+    
 }
 header{
 background-size: cover;
 background-position: center;
 text-align: center;
 color: white;
-padding: 100px;
+padding: 100px 0;
+
 }
 article ul{
     display: flex;
@@ -16,7 +18,7 @@ article ul{
     justify-content: flex-end;
     column-gap: 36px;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 30px;
 }
 header h1{
     font-size: 80px;
@@ -29,17 +31,22 @@ header h2{
 }
 #subtitulo{
     color: #b50705;
-    font-size: 30px;
+    font-size: 40px;
 }
 h3{
     color: #ffffff;
     text-align: center;
-    font-size: 42px;
+    font-size: 50px;
+    padding: 28px;
 }
 p{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 40px;
+    text-align: center;
+}
+.comprar{
+    background-color: #b50705;
 }
 .colorblanco{
     color: #ffffff;
@@ -49,11 +56,31 @@ p{
 
 }
 .imagen1{
-    width: 600px;
+    width: 800px;
     height: auto;
-
 }
 
+.contenedor2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.imagen2{
+    width: 700px;
+    height: auto;
+    padding: 15px;
+}
+a{
+    color: #ffffff;
+    align-items: center;
+}
+.comprar{
+    background-color: #b50705;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 8px;
+}
 
 
 .galeria{
@@ -70,13 +97,78 @@ p{
     background-color: #b50705;
     color: #ffffff;
     padding: 10px;
-    font-size:18px;
+}
+.textofooter{
+    text-align: justify;
+    font-size:20px;
 }
 
-@media(min-width: 576px){
 
+
+@media(max-width: 768px){
+    body{
+        margin: 10px;
+    }
+    img{
+        width: 100% !important;
+    }
+   .contenedor1, .contenedor2, .galeria{
+
+    flex-direction: column;
+   }
+   article ul{
+    font-size: 20px;
+    flex-direction: column;
+   }
+   header h1{
+    font-size: 35px;
+    text-align: center;
+   }
+   header h2{
+    font-size: 20px;
+    text-align: center;
+   }
+   h3{
+    font-size: 36px;
+   }
+   .textofooter{
+    font-size: 15px;
+   }
+   p{
+    font-size: 20px;
+   }
 }
 
-@media(min-width: 768px){
-    
+@media(max-width: 992px){
+    body{
+        margin: 15px;
+    }
+      img{
+        width: 100% !important;
+    }
+   .contenedor1, .contenedor2, .galeria{
+
+    flex-direction: column;
+   }
+   article ul{
+    font-size: 28px;
+    flex-direction: column;
+   }
+   header h1{
+    font-size: 40px;
+    text-align: center;
+   }
+   header h2{
+    font-size: 35px;
+    text-align: center;
+   }
+   h3{
+    font-size: 38px;
+   }
+   .textofooter{
+    font-size: 16px;
+   }
+   p{
+    font-size: 26px;
+   }
 }
